@@ -102,7 +102,7 @@
 
 	<build>
 		<!--<finalName>springboot-tomcat-pipeline</finalName>-->
-		<finalName>springbootexample-app</finalName>
+		<finalName>realtime-backend-app</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
