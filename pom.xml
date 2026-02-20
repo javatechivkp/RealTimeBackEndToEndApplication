@@ -13,7 +13,7 @@
 	<artifactId>JAVAAPPLICATION</artifactId>
 	<!--<packaging>war</packaging>-->
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<!--<packaging>war</packaging>-->
 	<name>JAVAAPPLICATION</name>
 	<description>Demo project for Spring Boot</description>
 	<url />
