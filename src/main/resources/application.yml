@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: JavaRealtimeApplicationWithALLExamples
+
+  datasource:
+    # driver-class-name: com.mysql.cj.jdbc.Driver  # Uncomment if needed
+    username: ${MYSQL_USER:root}
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/realtimebackend?useSSL=false&allowPublicKeyRetrieval=true
+    password: ${MYSQL_PASSWORD:root}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  mail:
+    host: smtp.gmail.com   # or smtp.office365.com
+    port: 587
+    username: srinuvasrao966@gmail.com
+    password: tccl vnxy jwsv ayhf  # Use Gmail App Password, not regular password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            protocols: TLSv1.2
+            trust: smtp.gmail.com
+
+# Uncomment and set active profile if needed
+#  profiles:
+#    active:
+#      - test
+
+
+   
+logging:
+  file:
+    name: C:/Users/HI/OneDrive/Desktop/logs/springbootapplication.log
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
