@@ -25,6 +25,6 @@ pipeline {
                   bat 'docker push thrishank99/springboot-backendapp-docker'
                 }
             }
-        }
-        }   
-        }
+       }
+     }   
+   }
