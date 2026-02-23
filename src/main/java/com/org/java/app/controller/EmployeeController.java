@@ -45,6 +45,11 @@ public class EmployeeController {
 
 	@Autowired
 	private EmailSender emailSender;
+	
+	@GetMapping("/welcome")
+	public String welcomeTest() {
+		return "WELCOME TO AWS TEST CI/CD TESTING BY USING AWS CLOULD..LATEST ADDED";
+	}
 
 	@PostMapping("/save")
 	public ResponseEntity<String> saveEmployee(@Valid @RequestBody EmployeeDto employeeDto, BindingResult result) {
