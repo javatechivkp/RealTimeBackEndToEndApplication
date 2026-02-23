@@ -48,7 +48,7 @@ public class EmployeeController {
 	
 	@GetMapping("/welcome")
 	public String welcomeTest() {
-		return "WELCOME TO AWS TEST CI/CD TESTING BY USING AWS CLOULD..LATEST ADDED";
+		return "WELCOME TO AWS TEST CI/CD AUTOMATION PERFECTLLY WORKING FINE";
 	}
 
 	@PostMapping("/save")
