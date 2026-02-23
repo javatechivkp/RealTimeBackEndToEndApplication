@@ -8,6 +8,7 @@ public class RealTimeBackendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RealTimeBackendApplication.class, args);
+		System.out.println("hello");
 	}
 
 }
