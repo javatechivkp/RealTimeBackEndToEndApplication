@@ -17,10 +17,13 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.server.MethodNotAllowedException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+import io.micrometer.common.lang.Nullable;
+
 @ControllerAdvice
 public class ControllerAdvise  extends ResponseEntityExceptionHandler{
 	
 	 @Override
+	 @Nullable
 	    protected ResponseEntity<Object> handleMethodArgumentNotValid(
 	            MethodArgumentNotValidException ex,
 	            HttpHeaders headers,

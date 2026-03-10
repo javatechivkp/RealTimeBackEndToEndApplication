@@ -123,7 +123,7 @@ public class EmployeeController {
 	}
 
 	@GetMapping("/findById/{empid}")
-	public ResponseEntity<?> findByIdData(@PathVariable("empid") int empid,
+	public ResponseEntity findByIdData(@PathVariable("empid") int empid,
 			@RequestHeader(name = "x-Request-Source") String sourceSystem) {
 
 		return switch (sourceSystem.toLowerCase()) {

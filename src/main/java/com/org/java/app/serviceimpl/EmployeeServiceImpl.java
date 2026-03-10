@@ -29,6 +29,8 @@ import com.org.java.app.service.EmployeeService;
 
 @Component
 public class EmployeeServiceImpl implements EmployeeService {
+	
+	private static final String ACTION_1 = "suresh";
 
 	@Autowired
 	private EmployeeRepository employeeRepository;
@@ -307,8 +309,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 		List<Employee> list = employeeRepository.findAll();
 		List<String> names = list.stream().map(s1 -> s1.getName()).sorted().collect(Collectors.toList());
 		for (String string : names) {
-			if (string.equals("suresh")) {
-				str = "suresh";
+			if (string.equals("ACTION_1")) {
+				str = "ACTION_1";
 				break;
 			}
 
@@ -328,8 +330,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 		List<Employee> list = employeeRepository.findAll();
 		List<String> names = list.stream().map(s1 -> s1.getName()).sorted().collect(Collectors.toList());
 		for (String string : names) {
-			if (string.equals("suresh")) {
-				str = "suresh";
+			if (string.equals("ACTION_1")) {
+				str = "ACTION_1";
 				break;
 			}
 		}
@@ -348,8 +350,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 		List<Employee> list = employeeRepository.findAll();
 		List<String> names = list.stream().map(s1 -> s1.getName()).sorted().collect(Collectors.toList());
 		for (String string : names) {
-			if (string.equals("suresh")) {
-				str = "suresh";
+			if (string.equals("ACTION_1")) {
+				str = "ACTION_1";
 				break;
 			}
 
@@ -370,8 +372,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 		List<Employee> list = employeeRepository.findAll();
 		List<String> names = list.stream().map(s1 -> s1.getName()).sorted().collect(Collectors.toList());
 		for (String string : names) {
-			if (string.equals("suresh")) {
-				str = "suresh";
+			if (string.equals("ACTION_1")) {
+				str = "ACTION_1";
 				break;
 			}
 
