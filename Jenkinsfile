@@ -26,5 +26,12 @@ pipeline {
                 }
             }
        }
-     }   
+    stage('build & SonarQube Analysis'){
+            steps{
+              withSonarQubeEnv('Sonarqubescanner'){
+              bat 'mvn clean package sonar:sonar'
+            }
+}
+        }     
    }
+}
